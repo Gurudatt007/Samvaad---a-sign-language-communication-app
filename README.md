@@ -3,6 +3,7 @@
 Samvaad is a web application designed to bridge the communication gap between hearing-impaired individuals and the non-hearing-impaired community.
 It converts spoken audio input into Indian Sign Language (ISL) animations, enabling intuitive and accessible communication.
 
+
 🚀 **Overview**
 
 Millions of hearing-impaired individuals face barriers due to differences in spoken and sign language.
@@ -14,6 +15,7 @@ The system:
 - Processes and interprets the text using NLP techniques
 - Displays the corresponding ISL animation sequence
 - This enables smoother communication between hearing and hearing-impaired individuals in multilingual environments.
+
 
 ✨ **Key Features**
 
@@ -32,12 +34,14 @@ Fully browser-based, no installations needed.
 🌍 Bridges Communication Barriers
 Helps simplify interactions with the hearing-impaired community.
 
+
 🛠 **Tech Stack**
 Component	Technology
 Speech Recognition	          ->           JavaScript Web Speech API
 NLP	                          ->           Custom text-processing logic
 Animation Rendering	          ->           Web-based ISL models & animations
 Frontend	                    ->           HTML, CSS, JavaScript
+
 
 ▶️ **How It Works**
 
