@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="home">
+  <h1 class="title">Samvad</h1>
+  <span class="title-span">A way to talk impared</span>
+  {% if not user.is_authenticated %}
+  <div class="column">
+    <a class="btn btn-secondary" href="{% url 'signup' %}">Sign Up</a>
+    <a class="btn btn-primary" href="{% url 'login' %}">Log-in</a>
+  </div>
+
+  {% endif %} {% if user.is_authenticated %}
+  <div class="column">
+    <a class="btn btn-secondary" href="{% url 'animation' %}">Try out</a>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

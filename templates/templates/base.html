@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <style>
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      h2 {
+        /* color: #feda6a; */
+      }
+
+      .li {
+        float: left;
+      }
+
+      .li a {
+        display: block;
+        color: #393f4d;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #393f4d;
+        color: #feda6a;
+        font-weight: bold;
+      }
+      .form-style button {
+        width: 89%;
+        height: 70%;
+        padding: 5%;
+        background: #feda6a;
+        border-bottom: 2px solid #393f4d;
+        border-top-style: none;
+        border-right-style: none;
+        border-left-style: none;
+        color: #393f4d;
+        font-weight: bold;
+        font-size: 28px;
+        font-family: "Times New Roman";
+      }
+
+      .form-style button:hover {
+        background-color: #393f4d;
+        color: #feda6a;
+        font-weight: bold;
+      }
+      .split {
+        height: 100%;
+        width: 50%;
+        position: fixed;
+        z-index: 1;
+        top: 50;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+
+      .left {
+        left: 15;
+        border-right: 0px #feda6a solid;
+      }
+
+      .right {
+        right: 0;
+        border-left: 1px #feda6a solid;
+      }
+
+      .mytext {
+        border: 1px solid #393f4d;
+        border-right: none;
+        padding: 4px;
+        margin: 0px;
+        float: left;
+        height: 32px;
+        overflow: hidden;
+        line-height: 16px;
+        width: 300px;
+        margin-left: 54px;
+      }
+
+      .mic {
+        border: 1px solid #393f4d;
+        background: #feda6a;
+        vertical-align: top;
+        padding: 0px;
+        margin: 0;
+        float: left;
+        height: 42px;
+        overflow: hidden;
+        width: 5em;
+        text-align: center;
+        line-height: 16px;
+      }
+
+      .submit {
+        border: 1px solid #393f4d;
+        height: 42px;
+        width: 160px;
+        text-align: center;
+        background-color: #feda6a;
+        color: #393f4d;
+        font-weight: bold;
+        font-size: 24px;
+        font-family: "Times New Roman";
+        vertical-align: top;
+      }
+      .submit:hover {
+        background-color: #393f4d;
+        color: #feda6a;
+        font-weight: bold;
+      }
+      .td {
+        /* color: #feda6a; */
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      body {
+        background-color: #efefef;
+        font-family: sans-serif;
+      }
+
+      .form-style {
+        font: 95% Arial, Helvetica, sans-serif;
+        max-width: 400px;
+        margin: 10px auto;
+        padding: 16px;
+      }
+      .form-style h1,
+      .form-style a {
+        padding: 20px 0;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: "Times New Roman";
+        text-align: center;
+        margin: -16px -16px 16px -16px;
+        color: #feda6a;
+      }
+      .form-style input[type="text"],
+      .form-style input[type="password"],
+      .form-style input[type="date"],
+      .form-style input[type="datetime"],
+      .form-style input[type="email"],
+      .form-style input[type="number"],
+      .form-style input[type="search"],
+      .form-style input[type="time"],
+      .form-style input[type="url"],
+      .form-style textarea,
+      .form-style select {
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        outline: none;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 100%;
+        background: #fff;
+        margin-bottom: 4%;
+        border: 1px solid #ccc;
+        padding: 3%;
+        color: #0000a0;
+        font: 95% Arial, Helvetica, sans-serif;
+      }
+      .form-style input[type="text"]:focus,
+      .form-style input[type="password"]:focus,
+      .form-style input[type="date"]:focus,
+      .form-style input[type="datetime"]:focus,
+      .form-style input[type="email"]:focus,
+      .form-style input[type="number"]:focus,
+      .form-style input[type="search"]:focus,
+      .form-style input[type="time"]:focus,
+      .form-style input[type="url"]:focus,
+      .form-style textarea:focus,
+      .form-style select:focus {
+        box-shadow: 0 0 5px #0000a0;
+        padding: 3%;
+        border: 1px solid #0000a0;
+      }
+
+      .site-form span,
+      label {
+        color: #000000;
+        font-weight: lighter;
+        font-size: 20px;
+      }
+      .errorlist {
+        color: red;
+        font-weight: 200;
+      }
+      .wrapper {
+        width: 100vw;
+        height: 92.3vh;
+      }
+
+      .home {
+        width: 100%;
+        height: 100%;
+
+        background: linear-gradient(#000000aa, #000000aa),
+          url(https://media.istockphoto.com/photos/smiling-indian-latin-deaf-disabled-child-school-girl-learning-online-picture-id1280356530?b=1&k=20&m=1280356530&s=170667a&w=0&h=Hsxq6fkMX2dXzfk47Bbek7slwk9_5YwPgSItskOMSh4=);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        text-align: center;
+      }
+      .home .title {
+        font-family: "Vujahday Script", cursive;
+        color: #fff;
+        font-size: 180px;
+        font-weight: bold;
+
+        /* padding-top: %; */
+      }
+      .home .title-span {
+        font-family: "Vujahday Script", cursive;
+        color: #fff;
+        font-size: 50px;
+        font-weight: bold;
+      }
+    </style>
+    <title>Samvad</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'home' %}">Samvad</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="{% url 'home' %}"
+                >Home</a
+              >
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'animation' %}">convertor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">About</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex"> -->
+          <ul class="navbar-nav">
+            {% if not user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'signup' %}">Sign Up</a>
+            </li>
+            {% endif %} {% if user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'logout' %}">Log-Out</a>
+            </li>
+            {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'login' %}">Log-in</a>
+            </li>
+            {% endif %}
+          </ul>
+          <!-- <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrapper">{% block content %} {% endblock %}</div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        var url = window.location.pathname;
+        var filename = url.substring(url.indexOf("/"));
+        $(".nav-link").each(function () {
+          var href = $(this).attr("href");
+          if (href == filename) {
+            $(this).addClass("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
